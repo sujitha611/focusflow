@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login — Day In My Life</title>
+    <title>Login — FocusFlow</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: #e8e8f0; font-family: 'Segoe UI', sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
@@ -25,12 +25,11 @@
 </head>
 <body>
 <div class="card">
-    <h1>🎯 Day In My Life</h1>
-    <p class="sub">DML Mode 🔥 — Login to continue</p>
-
-    {% with messages = get_flashed_messages(with_categories=true) %}
+    <h1>⚡ FocusFlow</h1>
+    <p class="sub">Don't Be Lazy. Stay Focused. 🎯</p>
+        {% with messages = get_flashed_messages(with_categories=true) %}
         {% for category, message in messages %}
-            <div class="{{ category }}">{{ message }}</div>
+    <div class="{{ category }}">{{ message }}</div>
         {% endfor %}
     {% endwith %}
 
